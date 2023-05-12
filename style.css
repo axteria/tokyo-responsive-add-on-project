@@ -149,7 +149,6 @@ h6 {
   text-align: center;
 }
 
-
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/img/footer.jpg);
@@ -225,5 +224,9 @@ footer a {
 
   .map-embed {
     aspect-ratio: 16/9;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
