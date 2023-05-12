@@ -60,6 +60,7 @@ section {
 .grid-column-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
 }
 
 .info-img {
@@ -71,7 +72,6 @@ h4 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 5px;
-  text-align: left;
   opacity: 0.5;
   text-transform: uppercase;
   margin-bottom: -30px;
@@ -86,11 +86,69 @@ h4 {
   max-width: 100%;
   margin: 0 auto;
   padding: 100px;
-}
-
-.food-section h4, .food-section h2{
   text-align: center;
 }
+
+.grid-column-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.card {
+  background-color: white;
+  text-align: left;
+  height: 720px;
+}
+
+.card .grid-column-2 {
+  grid-gap: 0;
+}
+
+.card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.map-embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+.card-content {
+  padding: 20px 30px;
+  margin-bottom: 0px;
+}
+
+.secondary-button {
+  display: block;
+  padding: 16px 32px;
+  color: white;
+  background-color: rgb(175, 46, 46);
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
+  margin-top: 14px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.gallery {
+  text-align: center;
+}
+
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -129,7 +187,7 @@ footer a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -149,6 +207,9 @@ footer a {
     font-size: 12px;
   }
 
+  img {
+    width: 180px;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -156,5 +217,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .map-embed {
+    aspect-ratio: 16/9;
   }
 }
