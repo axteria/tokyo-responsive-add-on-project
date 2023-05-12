@@ -1,5 +1,4 @@
-body,
-footer {
+body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -10,7 +9,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px;
-  margin: -1%;
 }
 
 .hero-text {
@@ -50,4 +48,40 @@ h2 {
   background-color: white;
   padding: 18px 28px;
   color: black;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/footer.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 26px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+footer ul {
+  padding: 0;
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a{
+  color: white;
+  opacity: 0.8;
 }
