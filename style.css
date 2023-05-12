@@ -191,6 +191,10 @@ footer a {
 }
 
 @media (max-width: 960px) {
+  .hero {
+    padding: 60px;
+  }
+
   h1 {
     font-size: 32px;
     line-height: 32px;
@@ -211,12 +215,9 @@ footer a {
   .primary-button,
   .secondary-button {
     font-size: 10px;
-    padding: 5px 10px;
+    padding: 8px 14px;
   }
 
-  img {
-    width: 180px;
-  }
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -226,6 +227,13 @@ footer a {
     padding: 30px;
   }
 
+  .card {
+    height: fit-content;
+  }
+
+  .food-section {
+    padding: 30px;
+  }
   .card img {
     display: none;
   }
@@ -241,5 +249,17 @@ footer a {
   p {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+
+  footer p,
+  footer h3,
+  footer ul {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
   }
 }
